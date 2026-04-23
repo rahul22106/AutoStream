@@ -102,7 +102,7 @@ def get_intent(user_input):
     if text in ["hi", "hello", "hey"]:
         return "greeting"
 
-    if any(w in text for w in ["buy", "get", "start", "subscribe"]):
+    if any(w in text for w in ["want", "try", "interested", "sign up", "pro plan", "basic plan", "upgrade"]):
         return "lead"
 
     return "info"
